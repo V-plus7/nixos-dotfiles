@@ -3,7 +3,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-     /etc/nixos/hardware-configuration.nix
+     ./hardware-configuration.nix
+     ./../../nixosModules/default.nix
     ];
 
   boot.loader.limine.enable = true;
