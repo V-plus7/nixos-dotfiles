@@ -9,6 +9,8 @@
     boot.loader.limine.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
+    boot.extraModprobeConfig = "optionsiwlwifi 11n_disable=1"; 
+
     boot.kernelPackages = pkgs.linuxPackages_latest;
   };
 

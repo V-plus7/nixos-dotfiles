@@ -16,6 +16,7 @@
     # If not available as programs
     environment.systemPackages = with pkgs; [
       wget
+      pciutils
     ];
 
     time.timeZone = "America/Los_Angeles";
